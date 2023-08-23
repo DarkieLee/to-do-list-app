@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgb(1, 1, 148), rgb(107, 11, 11));
+    padding: 20px;
+}
+
+.to-do-app {
+    width: 540px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+}
+
+.to-do-app > h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.to-do-app > h2 > img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(234, 222, 222);
+    border-radius: 20px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 16px;
+}
+
+::placeholder {
+    font-style: italic;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: rgb(42, 42, 223);
+    color: white;
+    padding: 10px 40px 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+}
+
+ul > li {
+    list-style: none;
+    font-size: 20px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+ul > li::before {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    /* top: 12px;
+    left: 8px; */
+}
+
+ul > li.checked {
+    /* color: rgb(234, 222, 222); */
+    text-decoration: line-through;
+}
+
+ul > li.checked::before {
+    background-image: url(./images/checked.png);
+}
+
+ul > li > span {
+    position: absolute;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+ul > li > span:hover {
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+}
