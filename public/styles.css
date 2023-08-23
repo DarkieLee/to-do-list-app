@@ -86,8 +86,8 @@ ul > li::before {
     background-image: url(./images/unchecked.png);
     background-size: cover;
     background-position: center;
-    /* top: 12px;
-    left: 8px; */
+    top: 12px;
+    left: 15px;
 }
 
 ul > li.checked {
