@@ -2,7 +2,7 @@ const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 function addTask () {
     if (inputBox.value === "") { 
-        alert ("Nigga you didn't put shit");
+        alert ("Please input valid task");
     }else{
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
