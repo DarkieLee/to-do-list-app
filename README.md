@@ -1,7 +1,6 @@
 <h2>About the project</h2>
 
-<p> As life's getting busier and busier, a friendly helper to remind us of important things in our daily life is highly needed and this app is exactly that.</p> <br>
-<h3>Build with:</h3>
+<p> As life's getting busier and busier, a friendly helper to remind us of important things in our daily life is highly needed and this app is exactly that.</p> <h3>Build with:</h3>
 
 » Vanila CSS <br>
 » React JS
